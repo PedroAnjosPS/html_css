@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>
+        Este vídeo está hospedado no meu próprio serivdor.
+    </p>
+    <video controls width="500px" height="315px" poster="imgs/thumb.jpeg" autoplay loop>
+        <source src="midia/video.mp4">
+        <source src="midia/video.m4v">
+        <source src="midia/video.webm">
+        <source src="midia/video.ogv">
+        <p>SEu navegador não tem compatibilidade com reprodução de vídeos. <a href="midia/video.mp4">Baixar vídeo em MP4</a></p>
+    </video>
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="500px" height="315px" src="https://www.youtube.com/embed/LeSprXAMNyI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <p>Não assinei!</p>
+</body>
+</html>
