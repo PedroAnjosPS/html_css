@@ -13,6 +13,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         caption{
@@ -27,9 +28,19 @@
             color: white;
         }
 
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
         td, th{
             border: 1.5px solid black;
             padding: 10px;
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
         }
 
         td.num{
@@ -59,7 +70,7 @@
             <tr>
                 <th scope="col">Estado</th>
                 <th scope="col">População</th>
-                <th scope="col">% do Total (Brasil)</th>
+                <th scope="col" style="width: 90px;">% do Total (Brasil)</th>
             </tr>
         </thead>
 
@@ -229,7 +240,7 @@
 
         <tfoot>
             <tr>
-                <th scope="rowgroup">Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
