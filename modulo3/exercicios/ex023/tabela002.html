@@ -15,6 +15,13 @@
             border-collapse: collapse;
         }
 
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot{
             background-color: gray;
             color: white;
@@ -37,6 +44,7 @@
     <!--
         ANATOMIA DE TABELAS GRANDES:
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -46,11 +54,12 @@
     -->
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
-                <th>% do Total (Brasil)</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+                <th scope="col">% do Total (Brasil)</th>
             </tr>
         </thead>
 
@@ -117,7 +126,7 @@
 
             <tr>
                 <td>Goiás</td>
-                <td>7.350.483</td>
+                <td class="num">7.350.483</td>
                 <td class="num">3,46%</td>
             </tr>
 
@@ -220,7 +229,7 @@
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="rowgroup">Total de Habitantes</th>
                 <td><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
