@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 002</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: aquamarine;
+        }
+
+        h1 {
+            width: 600px;
+            text-align: center;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            border-radius: 20px;
+            padding: 10px;
+            background-image: linear-gradient(to bottom, white, rgb(113, 170, 236));
+        }
+
+        form {
+            background-image: linear-gradient(to bottom, white, lightgrey);
+            width: 600px;
+            height: 400px;
+            margin: auto;
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+        form  label {
+            font-size: 1.4em;
+            font-weight: bold;
+        }
+
+        form input {
+            font-size: 1.4em;
+            padding: 2px;
+            margin-bottom: 30px;
+            border-radius: 4px;
+        }
+
+        form input#idcad {
+            text-align: center;
+            width: 150px;
+            height: 50px;
+            border-radius: 8px;
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: bisque;
+        }
+
+        form input#idcad:hover {
+            background-color: rgb(238, 190, 130);
+            cursor: pointer;
+        }
+
+        form input#idclean {
+            text-align: center;
+            width: 150px;
+            height: 50px;
+            border-radius: 8px;
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: rgb(247, 171, 153);
+        }
+
+        form input#idclean:hover {
+            background-color: rgb(243, 121, 93);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="idusu">Usuário:</label>
+            <input type="text" name="usu" id="idusu" required minlength="5" maxlength="30" size="19" placeholder="nome do usuário" autocomplete="username">
+        </p>
+        <p>
+            <label for="idsen">Senha:</label>
+            <input type="password" name="sen" id="idsen" required minlength="8" maxlength="20" placeholder="mínimo 8 letras" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar" id="idcad">
+            <input type="reset" value="Limpar" id="idclean">
+        </p>
+    </form>
+</body>
+</html>
