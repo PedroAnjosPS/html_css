@@ -8,6 +8,7 @@
 
 body, html {
     background-color: rgb(221, 221, 221);
+    overflow-x: hidden;
 }
 
 header {
@@ -62,7 +63,7 @@ article > p {
 }
 
 footer {
-    width: 97vw;
+    width: 97.5vw;
     background-color: white;
 }
 
