@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
 </head>
 <body>
     <header>
         <h1>As Principais Tendências Tecnológicas de 2025: O Futuro Já Começou</h1>
-        <menu>
+        <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
+        <menu id="itens">
             <ul>
                 
                 <li><a href="#">Início</a></li> <!-- Página principal com destaque para novidades, destaques ou uma apresentação do site. -->
@@ -74,5 +76,17 @@
             Este projeto foi criado e idealizado através do site <a href="https://www.cursoemvideo.com" target="_blank">CursoemVideo</a>. E as informações deste site foram geradas pelo <a href="https://chatgpt.com/" target="_blank">ChatGPT</a>.
         </p>
     </footer>
+
+    <script>
+        function clickMenu() {
+            const itensMenu = document.getElementById('itens');
+
+            if(itensMenu.style.display == 'block'){
+                itensMenu.style.display = 'none';
+            }else{
+                itensMenu.style.display = 'block';
+            }
+        };
+    </script>
 </body>
 </html>
