@@ -68,6 +68,7 @@ main {
 
 article > h2, article > h3 {
     padding-bottom: 20px;
+    text-align: justify;
 }
 
 article > p {
