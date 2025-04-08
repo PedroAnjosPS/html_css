@@ -64,6 +64,7 @@ article > p {
 
 footer {
     width: 100vw;
+    margin: auto;
     background-color: white;
 }
 
