@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box - flex basis</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div.conteiner {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        div.item {
+            background-color: lightskyblue;
+            font-size: 1.5em;
+            border: 1px solid rgba(0, 0, 0, 0.342);
+            text-align: center;
+            padding: 20px;
+            flex-basis: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">Conteúdo</div>
+        <div class="item">C</div>
+        <div class="item">Outro Conteúdo</div>
+        <div class="item">Conteúdo um pouco maior</div>
+        <div class="item">F</div>
+        <div class="item">Conteúdo maior ainda, que vai ocupar mais espaço</div>
+    </div>
+</body>
+</html>
