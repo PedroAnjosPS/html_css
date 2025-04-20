@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo Flex</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Flexbox Inteligente: Layouts Dinâmicos com Ordem Responsiva (Exemplo de conteúdo flexível)</h1>
+        <p>
+            O Flexbox é uma ferramenta essencial no desenvolvimento web moderno por permitir a criação de layouts flexíveis, alinhados e responsivos com pouca complexidade. Neste projeto, usamos o Flexbox para criar uma estrutura que se adapta dinamicamente ao tamanho da tela, garantindo uma experiência visual agradável em qualquer dispositivo.
+        </p>
+    </header>
+
+    <main>
+
+        <section class="flex-content">
+
+            <article class="media-text">
+                <div class="text">
+                    <h2>Explorando o Poder do Flexbox para Layouts Modernos (Elemento Media &rarr;	 Text)</h2>
+                    <p>
+                        A novidade desse site está na forma como os elementos se comportam ao atingir um ponto de quebra. Cada seção do <strong>main</strong> possui dois conteúdos lado a lado: texto e mídia (imagem ou vídeo). Mas, quando o espaço horizontal não é suficiente, os elementos se organizam verticalmente — e o mais interessante: com a ordem invertida.
+                    </p>
+                </div>
+                <div class="media">
+                    <img src="imagens/img-flex-content.png" alt="Criando site flexbox">
+                </div>
+            </article>
+
+            <article class="text-media">
+                <div class="text">
+                    <h2>Ordem Responsiva: Alternando Conteúdo com Elegância (Elemento Text &rarr; Media)</h2>
+                    <p>
+                        Essa troca de ordem não acontece por acaso. Utilizamos a propriedade <strong>order</strong> do Flexbox junto com <strong>flex-wrap: wrap;</strong> para reordenar os elementos conforme necessário. Assim, o usuário vê primeiro a mídia e depois o texto, reforçando o conteúdo visual antes da leitura quando em telas menores.
+                    </p>
+                </div>
+                <div class="media">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VBGMnFHRqcY?si=bzYDGiaWo7eg6SZC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </article>
+        </section> <!-- Fim da Seção Flex-content -->
+
+        <section class="normal">
+            <h2>Wrap Estratégico: Quando a Tela Decide a Estrutura (Conteúdo Normal)</h2>
+            <p>
+                Essa técnica melhora a legibilidade, a hierarquia de conteúdo e também é uma demonstração prática de como CSS pode ir além do visual estático. Ao manipular ordem e alinhamento com lógica responsiva, criamos interfaces que não apenas se ajustam ao dispositivo, mas que também respeitam o fluxo de atenção do usuário.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
